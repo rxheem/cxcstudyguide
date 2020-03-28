@@ -1,0 +1,158 @@
+.box {
+	border: 0.5px dotted grey;
+	padding: 20px;
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+	position: fixed;
+	width: 36px;
+	height: 30px;
+	left: 36px;
+	top: 110px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+	background: transparent;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+	background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+	height: 24px;
+	width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+	background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+	position: fixed;
+	height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+	background: #373a47;
+	padding: 2.5em 1.5em 0;
+	font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+	fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+	color: #b8b7ad;
+	padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+	display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+	-webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+	box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+audio {
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	-moz-border-radius: 7px 7px 7px 7px;
+	-webkit-border-radius: 7px 7px 7px 7px;
+	border-radius: 7px 7px 7px 7px;
+}
+
+a {
+	color: #0084cf;
+}
+
+.ul-st {
+	margin-left: -15px;
+}
+
+.ul-st li {
+	padding-bottom: 15px;
+}
+
+.ul-st li a {
+	color: #0084cf;
+}
+
+.ul-st-1 {
+	margin-left: -15px;
+	list-style-type: none;
+}
+
+.ul-st-1 li {
+	padding-bottom: 15px;
+}
+
+.ul-st-1 li a {
+	color: #0084cf;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+.marketing h2 {
+	font-weight: 400;
+}
+.marketing .col-lg-4 p {
+	margin-right: .75rem;
+	margin-left: .75rem;
+}
+
+.breadcrumb {
+	background-color: transparent !important;
+}
+
+.zoom {
+	padding: 50px;
+	transition: transform .2s; /* Animation */
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.zoom:hover {
+	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.footer-link {
+  color: #999999;
+}
+
+.footer-link:hover {
+  color: white!important;
+}
