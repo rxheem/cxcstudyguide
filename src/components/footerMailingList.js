@@ -40,7 +40,8 @@ class FooterMailingList extends React.Component {
     return (
       <>
         <form
-          name="form"
+          data-netlify-recaptcha="true"
+          name="footer-email-subscription"
           className="form"
           method="POST"
           data-netlify="true"
