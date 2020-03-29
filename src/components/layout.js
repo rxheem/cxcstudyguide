@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import Navigation from "./navigation"
+import SideMenu from "./sideMenu"
 
 // CSS files
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navigation siteTitle={data.site.siteMetadata.title} />
+
       <main>{children}</main>
       <Footer />
     </>

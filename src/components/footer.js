@@ -18,6 +18,7 @@ import {
   Container,
   Row,
   Col,
+  Nav as ShardsNav,
 } from "shards-react"
 import Nav from "react-bootstrap/Nav"
 import SocialMediaIcons from "./socialMediaIcons"
@@ -31,28 +32,138 @@ class Footer extends React.Component {
         <br />
         <footer className="footer" name="footer" id="footer">
           <div className="bg-light">
-            <br />
+            <Container>
+              <Row>
+                <Col sm={12} md={4} lg={4} xl={4}>
+                  <br />
+                  <h6 className="ml-2">Popular CSEC Subjects</h6>
+                  <ShardsNav
+                    vertical
+                    navbar={false}
+                    className="flex-column"
+                    navbar
+                    className="ml-4"
+                  >
+                    <NavItem>
+                      <NavLink href="/csec/mathematics/">
+                        <i className="fas fa-square-root-alt text-dark mr-2"></i>
+                        Mathematics
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/csec/english-a/">
+                        <i className="fas fa-spell-check text-danger mr-2"></i>
+                        English A
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/csec/chemistry/">
+                        <i className="fas fa-flask text-success mr-2"></i>
+                        Chemistry
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/csec/information-technology/">
+                        <i className="fas fa-desktop text-black mr-2"></i>
+                        Information Technology
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/csec/principles-of-accounts/">
+                        <i className="fas fa-sort-numeric-up text-dark mr-2"></i>
+                        Principles of Accounts
+                      </NavLink>
+                    </NavItem>
+                  </ShardsNav>
+                  <br />
+                </Col>
+                <Col sm={12} md={4} lg={4} xl={4}>
+                  <br />
+                  <h6 className="ml-2">Popular CAPE Subjects</h6>
+                  <ShardsNav
+                    vertical
+                    navbar={false}
+                    className="flex-column"
+                    navbar
+                    className="ml-4"
+                  >
+                    <NavItem>
+                      <NavLink href="/cape/communication-studies/">
+                        Communication Studies
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/">Biology</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/cape/computer-science/">
+                        Computer Science
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/cape/sociology/">Sociology</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/">Applied Mathematics</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/">Economics</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/">Chemistry</NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink href="/">Spanish</NavLink>
+                    </NavItem>
+                  </ShardsNav>
+                  <br />
+                </Col>
+                <Col sm={12} md={4} lg={4} xl={4}>
+                  <br />
+                  <h6>Mailing List</h6>
+
+                  <FooterMailingList />
+                  <br />
+                </Col>
+              </Row>
+            </Container>
           </div>
           <div className="bg-dark">
             <Container>
               <Row>
                 <Col sm={12} md={3} lg={3} xl={3}>
                   <br />
-                  <h6 className="text-white">Yah Yah Yah</h6>
-                  <Nav className="flex-column" style={{ marginLeft: "-10px" }}>
-                    <Nav.Link className="text-white" href="/">
-                      Active
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Disabled
-                    </Nav.Link>
-                  </Nav>
+                  <h6 className="text-white">Student Opportunities</h6>
+
+                  <ShardsNav
+                    vertical
+                    navbar={false}
+                    className="flex-column"
+                    navbar
+                  >
+                    <NavItem>
+                      <NavLink className="footer-link" href="/">
+                        Youth Development Programmes
+                      </NavLink>
+                      <NavLink className="footer-link" href="/">
+                        Summer Jobs
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/">
+                        Scholarships
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/">
+                        College Counselling
+                      </NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                  </ShardsNav>
+
                   <br />
                 </Col>
                 <Col
@@ -63,47 +174,55 @@ class Footer extends React.Component {
                   style={{ marginLeft: "-10px" }}
                 >
                   <br />
-                  <h6 className="text-white ml-2">Yah Yah Yah</h6>
-                  <Nav className="flex-column">
-                    <Nav.Link className="text-white" href="/">
-                      Active
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Disabled
-                    </Nav.Link>
-                  </Nav>
+                  <h6 className="text-white ml-2"></h6>
+                  <ShardsNav
+                    vertical
+                    navbar={false}
+                    className="flex-column"
+                    navbar
+                  >
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                  </ShardsNav>
                   <br />
                 </Col>
                 <Col sm={12} md={3} lg={3} xl={3}>
                   <br />
-                  <h6 className="text-white">Yah Yah Yah</h6>
-                  <Nav className="flex-column" style={{ marginLeft: "-10px" }}>
-                    <Nav.Link className="text-white" href="/">
-                      Active
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Link
-                    </Nav.Link>
-                    <Nav.Link className="text-white" href="/">
-                      Disabled
-                    </Nav.Link>
-                  </Nav>
+                  <h6 className="text-white"></h6>
+                  <ShardsNav
+                    vertical
+                    navbar={false}
+                    className="flex-column"
+                    navbar
+                  >
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                    <NavItem>
+                      <NavLink className="footer-link" href="/"></NavLink>
+                    </NavItem>
+                  </ShardsNav>
                   <br />
                 </Col>
                 <Col sm={12} md={3} lg={3} xl={3}>
                   <br />
-                  <h6 className="text-white">Mailing List</h6>
 
-                  <FooterMailingList />
                   <br />
                 </Col>
                 <Col sm={12} md={3} lg={3} xl={3}></Col>
@@ -146,6 +265,9 @@ class Footer extends React.Component {
                     </Nav.Link>
                     <Nav.Link className="" href="/notices/">
                       Notices
+                    </Nav.Link>
+                    <Nav.Link className="" href="/help/">
+                      Help Centre
                     </Nav.Link>
                   </Nav>
                 </Col>

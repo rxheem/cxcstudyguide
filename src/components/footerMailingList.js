@@ -1,3 +1,4 @@
+import React from "react"
 import {
   Card,
   CardHeader,
@@ -13,8 +14,7 @@ import {
   Container,
   Col,
 } from "shards-react"
-
-import React from "react"
+import $ from "jquery"
 
 class FooterMailingList extends React.Component {
   constructor(props) {
@@ -40,6 +40,7 @@ class FooterMailingList extends React.Component {
     return (
       <>
         <form
+          id="emailsub"
           data-netlify-recaptcha="true"
           name="footer-email-subscription"
           className="form"

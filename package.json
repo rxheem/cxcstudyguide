@@ -14,15 +14,18 @@
     "gatsby-plugin-sharp": "^2.4.13",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "jquery": "^3.4.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.12.0",
     "react-draggable": "^4.2.0",
     "react-fontawesome": "^1.7.1",
     "react-ga": "^2.7.0",
     "react-helmet": "^5.2.1",
     "shards-react": "^1.0.3",
+    "tedious": "^8.2.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
