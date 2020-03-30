@@ -29,9 +29,7 @@ const IndexPage = () => (
       <br />
 
       <Row>
-        <Col sm={12} md={8} lg={8}>
-          <div data-netlify-identity-button>Login with Netlify Identity</div>
-        </Col>
+        <Col sm={12} md={8} lg={8}></Col>
         <Col sm={12} md={4} lg={4}></Col>
       </Row>
     </Container>

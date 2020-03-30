@@ -12,15 +12,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import Navigation from "./navigation"
+import QuickNav from "./quickNav"
 import SideMenu from "./sideMenu"
 
 // CSS files
 import "bootstrap/dist/css/bootstrap.min.css"
 import "shards-ui/dist/css/shards.min.css"
 import "./layout.css"
-
-// JS scripts
-import "../assets/js/netlify-identity-widget.js"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,7 +34,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Navigation siteTitle={data.site.siteMetadata.title} />
-
+      <QuickNav />
       <main>{children}</main>
       <Footer />
     </>

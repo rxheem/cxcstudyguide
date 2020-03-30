@@ -32,7 +32,7 @@ class Footer extends React.Component {
         <br />
         <footer className="footer" name="footer" id="footer">
           <div className="bg-light">
-            <Container>
+            <Container hidden>
               <Row>
                 <Col sm={12} md={4} lg={4} xl={4}>
                   <br />
