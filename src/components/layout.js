@@ -20,6 +20,7 @@ import "shards-ui/dist/css/shards.min.css"
 import "./layout.css"
 
 // JS scripts
+import "../assets/js/netlify-identity-widget.js"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

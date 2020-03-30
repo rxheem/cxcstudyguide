@@ -3,10 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SignInComponent from "../components/signInComponent"
-
-// Home Components
-import SubjectLineup from "../home/subjectLineup"
 
 import {
   Card,
@@ -23,15 +19,12 @@ import {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Frequently Asked Questions" />
 
     <Container>
       <br />
-
       <Row>
-        <Col sm={12} md={8} lg={8}>
-          <div data-netlify-identity-button>Login with Netlify Identity</div>
-        </Col>
+        <Col sm={12} md={8} lg={8}></Col>
         <Col sm={12} md={4} lg={4}></Col>
       </Row>
     </Container>
